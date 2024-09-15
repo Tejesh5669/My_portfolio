@@ -1,0 +1,341 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif; /* Elegant serif font for a professional feel */
+    background-color: #f9f9f9; /* Light background for readability */
+    color: #333;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #333;
+    padding: 20px 0;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; /* Clean, sans-serif font for clarity */
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Full-width sections */
+section {
+    width: 100vw;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Add some spacing between sections */
+section:not(:first-of-type) {
+    margin-top: 80px;
+}
+
+/* Header Section */
+#home {
+    width: 100vw;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Subtle gradient background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px; /* Padding for smaller screens */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.home-content {
+    max-width: 800px; /* Maximum width for better readability */
+    padding: 20px;
+}
+
+#home h1 {
+    font-size: 6rem; /* Prominent heading */
+    margin-bottom: 20px; /* Space below heading */
+    font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+    font-weight: 700; /* Bold weight */
+    letter-spacing: 1px; /* Slight letter spacing */
+}
+
+.header-name {
+    font-size: 2rem; /* Larger introduction text */
+    line-height: 1.4;
+}
+
+.header-name .highlight {
+    color: #ffdd57; /* Highlight color */
+    font-weight: 600;
+}
+
+.header-name .surname {
+    color: #f0f0f0; /* Light color for the surname */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.5rem; /* Smaller heading size on smaller screens */
+    }
+
+    .header-name {
+        font-size: 1.5rem; /* Smaller font size for the introduction */
+    }
+}
+/* Hobbies Section Styling */
+#hobbies {
+    width: 100vw;
+    height: 100vh; /* Full viewport height */
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+#hobbies h2 {
+    font-size: 3rem; /* Larger heading */
+    color: #333;
+    margin-bottom: 40px; /* Spacing below the heading */
+}
+
+.hex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px; /* Increased gap between hex icons */
+}
+
+.hex-box {
+    width: 150px; /* Increased size */
+    height: 180px; /* Increased size */
+    background-color: #ff6347;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem; /* Increased font size */
+    text-align: center;
+    line-height: 1.4;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hex-box:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    background-color: #ff9473;
+}
+
+.hex-box p {
+    margin: 0;
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 768px) {
+    .hex-box {
+        width: 120px;
+        height: 140px;
+    }
+
+    #hobbies h2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Contact Section Styling */
+#contact {
+    width: 100vw;
+    height: 100vh; /* Full viewport height */
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 20px; /* Added some padding for better spacing */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 3rem; /* Larger heading */
+    color: #333;
+    margin-bottom: 30px; /* Spacing below the heading */
+}
+
+#contact a {
+    color: #ff6347;
+    text-decoration: none;
+    font-size: 1.6rem; /* Increased font size */
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 10px 0; /* Spacing between links */
+    display: inline-block; /* Allows padding and transform effects */
+}
+
+#contact a:hover {
+    color: #ff9473;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#contact p {
+    font-size: 1.4rem; /* Increased font size */
+    color: #555;
+    margin: 20px 0; /* Spacing around the paragraph */
+}
+
+#contact a:focus {
+    outline: 2px solid #ff6347; /* Outline for accessibility */
+    outline-offset: 2px;
+}
+/* Career Goals and Aspirations Section Styling */
+#career-goals {
+    width: 100vw;
+    min-height: 100vh; /* Ensure section takes at least full viewport height */
+    background-color: #f0f4f8; /* Soft background color for a professional look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px; /* Padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    position: relative;
+}
+
+.career-content {
+    max-width: 800px; /* Max width for better readability */
+    background-color: #fff; /* White background for the content */
+    padding: 40px; /* Padding inside the content box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center; /* Center-align text */
+}
+
+#career-goals h2 {
+    font-size: 2.5rem; /* Larger heading size */
+    color: #333; /* Dark color for contrast */
+    margin-bottom: 20px; /* Space below heading */
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    font-weight: 700; /* Bold weight */
+}
+
+#career-goals p {
+    font-size: 1.2rem; /* Readable font size */
+    color: #555; /* Medium dark color for text */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #career-goals h2 {
+        font-size: 2rem; /* Smaller heading size on smaller screens */
+    }
+
+    #career-goals p {
+        font-size: 1rem; /* Smaller font size for paragraphs */
+    }
+}
+/* About Me Section Styling */
+#about-me {
+    width: 100vw;
+    min-height: 100vh; /* Ensure section takes at least full viewport height */
+    background-color: #f5f5f5; /* Soft background color for a clean look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px; /* Padding for spacing */
+    position: relative;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    max-width: 1200px; /* Max width for better readability */
+    width: 100%; /* Full width */
+    background-color: #ffffff; /* White background for the content box */
+    border-radius: 8px; /* Rounded corners for the content box */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 40px;
+    text-align: center; /* Center-align text content */
+}
+
+.profile-picture {
+    width: 200px; /* Medium size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the picture */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin-bottom: 20px; /* Space below picture */
+}
+
+.about-text {
+    max-width: 800px; /* Max width for better readability */
+}
+
+#about-me h2 {
+    font-size: 2.5rem; /* Larger heading size */
+    color: #333; /* Dark color for contrast */
+    margin-bottom: 20px; /* Space below heading */
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    font-weight: 700; /* Bold weight */
+}
+
+#about-me p {
+    font-size: 1.1rem; /* Readable font size */
+    color: #666; /* Medium dark color for text */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-picture {
+        width: 150px; /* Smaller picture size on smaller screens */
+        margin-bottom: 15px; /* Adjust space below picture */
+    }
+
+    #about-me h2 {
+        font-size: 2rem; /* Smaller heading size on smaller screens */
+    }
+
+    #about-me p {
+        font-size: 1rem; /* Smaller font size for paragraphs */
+    }
+}
