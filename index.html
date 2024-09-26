@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,35 +16,34 @@
             <li><a href="#about-me">About</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
             <li><a href="#career-goals">Career Goals</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
- <!-- Home Section -->
-<section id="home">
-    <div class="home-content">
-        <h1>Welcome to My Portfolio</h1>
-        <p class="header-name">Hi, I'm <span class="highlight">Tejesh</span> <span class="surname">Narsipudi</span></p>
-    </div>
-</section>
-
-
-<!-- About Me Section -->
-<section id="about-me">
-    <div class="about-content">
-        <img src="./profile-picture.jpeg" alt="Tejesh Narsipudi" class="profile-picture">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-                I am currently pursuing a Master’s degree in Information Technology, aiming to specialize in artificial intelligence and data science. My passion for technology drives me to seek out innovative solutions and stay ahead of industry trends.
-            </p>
-            <p>
-                With a strong foundation in programming and a keen interest in emerging technologies, I am eager to apply my skills in real-world scenarios and contribute to impactful projects. I enjoy collaborating with others and am always looking to learn and grow in my field.
-            </p>
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p class="header-name">Hi, I'm <span class="highlight">Tejesh</span> <span class="surname">Narsipudi</span></p>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- About Me Section -->
+    <section id="about-me">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I am currently pursuing a Master’s degree in Information Technology, aiming to specialize in artificial intelligence and data science. My passion for technology drives me to seek out innovative solutions and stay ahead of industry trends.
+                </p>
+                <p>
+                    With a strong foundation in programming and a keen interest in emerging technologies, I am eager to apply my skills in real-world scenarios and contribute to impactful projects. I enjoy collaborating with others and am always looking to learn and grow in my field.
+                </p>
+            </div>
+            <img src="./profile-picture.jpeg" alt="Tejesh Narsipudi" class="profile-picture">
+        </div>
+    </section>
 
     <!-- Hobbies Section -->
     <section id="hobbies">
@@ -56,18 +56,37 @@
         </div>
     </section>
 
-<section id="career-goals">
-    <div class="career-content">
-        <h2>Career Goals and Aspirations</h2>
-        <p>
-            As I pursue my Master’s degree in Information Technology, my primary goal is to leverage my skills and knowledge to contribute meaningfully to the technology sector. I am particularly interested in specializing in artificial intelligence and data science, aiming to work on innovative projects that drive progress and solve real-world problems. 
-        </p>
-        <p>
-            I aspire to join a forward-thinking organization where I can collaborate with talented professionals, continuously learn and grow, and make a significant impact through my work. I am committed to staying at the forefront of technological advancements and applying my expertise to create solutions that enhance efficiency and user experience.
-        </p>
-    </div>
-</section>
+    <!-- Career Goals Section -->
+    <section id="career-goals">
+        <div class="career-content">
+            <h2>Career Goals and Aspirations</h2>
+            <p>
+                As I pursue my Master’s degree in Information Technology, my primary goal is to leverage my skills and knowledge to contribute meaningfully to the technology sector. I am particularly interested in specializing in artificial intelligence and data science, aiming to work on innovative projects that drive progress and solve real-world problems. 
+            </p>
+            <p>
+                I aspire to join a forward-thinking organization where I can collaborate with talented professionals, continuously learn and grow, and make a significant impact through my work. I am committed to staying at the forefront of technological advancements and applying my expertise to create solutions that enhance efficiency and user experience.
+            </p>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>AI Chatbot</h3>
+                <p>A conversational AI chatbot using Python and NLP technologies to automate customer support.</p>
+                <a href="project1.html" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Portfolio Website</h3>
+                <p>This portfolio website is built with HTML, CSS, and JavaScript, showcasing my work and skills.</p>
+                <a href="project2.html" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
@@ -76,6 +95,10 @@
         <a href="mailto:tejeshnarsipudi@gmail.com">tejeshnarsipudi@gmail.com</a>
         <p>Address: Nilgiri Block, 1st Floor, 203D</p>
     </section>
+
+    <footer>
+        <p>&copy; 2024 Tejesh Narsipudi. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
